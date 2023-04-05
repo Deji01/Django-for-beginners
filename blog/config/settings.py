@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_TRUSTED_ORIGINS = [
     "https://deji01-crispy-space-yodel-v59w69p4qr9fxw96-8000.preview.app.github.dev"
 ]
+
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
